@@ -8,14 +8,14 @@
 
 const int MAX_STACK_SIZE 	= 50;
 const int MAX_WORD_SIZE		= 30;
-const int LENGTH_OF_FILENAME= 20;
-int stackTopIndex 			= -1;
+const int LENGTH_OF_FILENAME	= 20;
+int stackTopIndex 		= -1;
 
 char **stack = NULL;
 
 bool 	push	( const char *word );
 char* 	pop 	( );
-char*	top		( );
+char*	top	( );
 bool	isEmpty	( );
 
 
