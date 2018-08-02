@@ -4,14 +4,14 @@
 
 #define 	LCHILD( parent ) 	( (parent*2) + 1 )
 #define 	RCHILD( parent ) 	( (parent*2) + 2 )
-#define     PARENT( child  )    ( child/2 )
+#define     	PARENT( child  )    	( child/2 )
 
 const int MAX_HEAP_SIZE		= 100;
-const int LENGTH_OF_FILENAME= 20;
+const int LENGTH_OF_FILENAME	= 20;
 
 int *heap 			= NULL;
-int last_index		= -1;
-int totalElements	= 0;
+int last_index			= -1;
+int totalElements		= 0;
 
 bool 	makeHeap	( );
 bool	shiftUp		( int );
@@ -106,8 +106,8 @@ bool 	makeHeap	( )
 bool 	shiftDown 	( int parentIndex )
 {
 	bool isShiftedDown 		= false;
-	bool isLeftChildPresent	= false;
-	bool isRightChildPresent= false;
+	bool isLeftChildPresent		= false;
+	bool isRightChildPresent	= false;
 	
 	
 	while( (LCHILD(parentIndex) <= last_index) || (RCHILD(parentIndex) <= last_index) ) 
@@ -169,8 +169,8 @@ bool	shiftUp		( int node)
 			isShiftedUp 		= true;
 			int swapTemp 		= heap[PARENT(node)];
 			heap[PARENT(node)]	= heap[node];
-			heap[node] 			= heap[PARENT(node)];
-			node 				= PARENT(node);
+			heap[node] 		= heap[PARENT(node)];
+			node 			= PARENT(node);
 		}
 		else{
 			break;
