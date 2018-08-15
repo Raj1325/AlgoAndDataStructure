@@ -4,7 +4,7 @@
 #define ARRAY_LENGTH 100
 const int LENGTH_OF_FILENAME = 20;
 
-int data		[ ARRAY_LENGTH ] ;
+int data	[ ARRAY_LENGTH ] ;
 int forward 	[ ARRAY_LENGTH ] ;
 int backward	[ ARRAY_LENGTH ] ;
 int validCount 	= -1;
@@ -42,7 +42,7 @@ int main ( int argc , char **argv )
 			{
 				validCount++;
 				//assuming there is no redundancy in "where" while reading file
-				data[where]			= what;
+				data[where]		= what;
 				forward[validCount]	= where;
 				backward[where]		= validCount;
 			}
