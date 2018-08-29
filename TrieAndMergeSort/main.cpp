@@ -1,13 +1,3 @@
-/*	
-
-	Algorithm and Datastructures : Assignment 1
-	
-	Name		: Raj Dighe
-	Login		: rpd328
-	Student ID 	: 6147690 
-	
-*/
-
 #include <iostream>
 #include <string>
 #include <cstdlib>
